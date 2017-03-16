@@ -8,7 +8,22 @@
   </head>
   <body>
 
+    <video class="mejs__player" width="600" height="450" poster="assets/birthday-gift.jpg">
+      <source src="assets/CWY-BDAY2017-newFinal.mp4" type="video/mp4">
+    </video>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelement-and-player.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">// <![CDATA[
+      $(document).ready(function() {
+          $('video').mediaelementplayer({
+              alwaysShowControls: true,
+              videoVolume: 'horizontal',
+              features: ['playpause','progress','volume','fullscreen']
+          });
+      });
+    </script>
+
   </body>
 </html>
