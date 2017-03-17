@@ -4,41 +4,34 @@
     <meta charset="utf-8">
     <title>Happy Birthday, Cliff!</title>
     <link rel="stylesheet" href="css/mediaelementplayer.css">
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
 
   </head>
   <body>
 
-    <div class="container">
-    <div class="headline">
+    <div class="container movie-screen">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="letterhead" src="assets/balloon-146492_1280.png" alt="">
+        </div>
+        <div class="col-md-8">
+          <div>
+            <h1>Just for You</h1>
+          </div>
+          <div class="videocontent">
+          <video id="video1" style="width: 100%; height: 100%" width="100%" height="100%" poster="assets/birthday-gift.jpg" src="assets/CWY-BDAY2017-newFinal.mp4" type="video/mp4">
+          </video>
+          </div>
+        </div>
 
+      </div>
     </div>
-    <div class="frame">
-    <!-- <video class="mejs__player" width="600" height="450" poster="assets/birthday-gift.jpg">
-      <source src="assets/CWY-BDAY2017-newFinal.mp4" type="video/mp4">
-    </video> -->
-    <div class="videocontent">
-    <video id="video1" style="width: 100%; height: 100%", controls="controls" width="100%" height="100%" poster="assets/birthday-gift.jpg" src="assets/CWY-BDAY2017-newFinal.mp4" type="video/mp4">
-    </video>
-    </div>
-
-    </div></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/3.2.4/mediaelement-and-player.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/mediaelement-and-player.js"></script>
     <script src="js/server.js"></script>
-
-    <!-- <script type="text/javascript">// <![CDATA[
-      $(document).ready(function() {
-          $('video').mediaelementplayer({
-              pluginPath: "js/mediaelement-flash-video.swf"
-              alwaysShowControls: true,
-              videoVolume: 'horizontal',
-              features: ['playpause','progress','volume','fullscreen']
-          });
-      });
-    </script> -->
 
   </body>
 </html>
