@@ -3,6 +3,10 @@ body {
   background-size: cover;
 }
 
+.center-align {
+  vertical-align: center;
+}
+
 .videocontent {
   width: 80%;
   max-width: 640px;
